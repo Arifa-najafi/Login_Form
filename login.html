@@ -1,122 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body{
-      background-image:url(img/dashboard.jpeg);
-      background-position: center;
-     
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-size: cover;
-    }
-    .logincontainer{
-      width: 400px;
-      background-color: rgba(0,180,200,0.25);
-      background: linear-gradient(135deg rgba(255,255,255,0.22),rgba(255,255,255,0.05));
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(155,255,255,0.35);
-      padding: 20px 50px;
-      border-radius: 14px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.25);
-    }
-    .logincontainer:hover{
-      transform:translateY(-8px);
-    }
-      .logincontainer h2{
-        text-align:center;
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(img/dashboard.jpeg);
+        background-position: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-size: cover;
+      }
+      .logincontainer {
+        width: 400px;
+        background-color: rgba(0, 180, 200, 0.25);
+        background: linear-gradient(
+          135deg rgba(255, 255, 255, 0.22),
+          rgba(255, 255, 255, 0.05)
+        );
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(155, 255, 255, 0.35);
+        padding: 20px 50px;
+        border-radius: 14px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+      }
+      .logincontainer:hover {
+        transform: translateY(-8px);
+      }
+      .logincontainer h2 {
+        text-align: center;
         color: #0e45ab;
         letter-spacing: 1px;
         font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
         margin-top: 20px;
         margin-bottom: 20px;
-        
-
       }
-     input{
-     
-      padding: 8px;
-      border: none;
-      margin-bottom: 10px;
-      border-radius: 6px;
-       color: #0e45ab;
-      width: 100%;
-      outline: none;
-      border: 1px solid #ccc;
-      font-size: 14px;
-      background-color:rgb(19, 158, 151);
-
-     
-      
-     }
-    input::placeholder{
-      font-size: 14px;
-   color: #f2f6f9;
-
-    }
-    input:focus{
-      border: 1px solid rgb(111, 103, 102);
-       background-color:rgb(19, 158, 151);
-     
-    }
-
-      .logincontainer button{
-      padding: 8px;
-      border-radius: 6px;
-      width: 100%;
-      border: none;
-     color: #f2f6f9;
-     font-size: 16px;
-     margin-top: 20px;
-     cursor: pointer;
-     background: linear-gradient(123deg, #0e45ab,#0efafa);
-     
-
-     }
-      .logincontainer button:hover{
-      background: linear-gradient(123deg,#0efafa, #0e45ab); 
-     }
-     .link{
-      margin-top: 20px;
-      margin-bottom: 20px;
-      text-align: center;
-     
-     }
-     .logincontainer a{
-      color: #0e45fb;
-      font-size: 13px;
-      text-decoration: none;
-      text-align: center;
-     }
-      .logincontainer a:hover{
-        color:#0effff;
-        transition: 0,3s ease;
+      input {
+        padding: 8px;
+        border: none;
+        margin-bottom: 10px;
+        border-radius: 6px;
+        color: #0e45ab;
+        width: 100%;
+        outline: none;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        background-color: rgb(19, 158, 151);
       }
-        
-      
-  </style>
-</head>
-<body>
-  <div class="logincontainer">
-    <h2>Login Form</h2>
-    <input type="email" placeholder="email"required>
-     <input type="password" placeholder="password"required>
-     <a href="dashboard.html"><button>login</button></a>
-     <div class="link">
-      <a href="">forgot password?</a>
-       <a href="">sign up</a>
-     </div>
-  </div>
-</body>
+      input::placeholder {
+        font-size: 14px;
+        color: #f2f6f9;
+      }
+      input:focus {
+        border: 1px solid rgb(111, 103, 102);
+        background-color: rgb(19, 158, 151);
+      }
+
+      .logincontainer button {
+        padding: 8px;
+        border-radius: 6px;
+        width: 100%;
+        border: none;
+        color: #f2f6f9;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+        background: linear-gradient(123deg, #0e45ab, #0efafa);
+      }
+      .logincontainer button:hover {
+        background: linear-gradient(123deg, #0efafa, #0e45ab);
+      }
+      .link {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .logincontainer a {
+        color: #0e45fb;
+        font-size: 13px;
+        text-decoration: none;
+        text-align: center;
+      }
+      .logincontainer a:hover {
+        color: #0effff;
+        transition:
+          0,
+          3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logincontainer">
+      <h2>Login Form</h2>
+      <input type="email" placeholder="email" required />
+      <input type="password" placeholder="password" required />
+      <a href="dashboard.html"><button>login</button></a>
+      <div class="link">
+        <a href="">forgot password?</a>
+        <a href="">sign up</a>
+      </div>
+    </div>
+  </body>
 </html>
